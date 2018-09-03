@@ -13,7 +13,7 @@ public class Flight {
         // Do stuff to initialize values
     }
 
-    public void travel() {
+    public void fly() {
         //Do stuff to travel
     }
 
@@ -28,18 +28,4 @@ public class Flight {
         }
         return freeSeats;
     }
-
-    public void printItinerary() {
-        // Do stuff to print flight data
-    }
-
-    public void printItineraryXML() {
-        // Code for xml formatting and print
-    }
-
-    public void printItineraryJSON() {
-        // Code for JSON formatting and print
-    }
 }
-
-

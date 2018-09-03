@@ -3,13 +3,12 @@ package com.company;
 import java.util.ArrayList;
 import java.util.Date;
 
-public class Flight {
-    Date d, a;
-    int minutes;
+public class Flight extends Travel {
     ArrayList<FlightSeat> seats = new ArrayList<>();
     String type;
 
     public Flight(Date d, Date a, int minutes, String type) {
+        super(d, a, minutes);
         // Do stuff to initialize values
     }
 
@@ -27,5 +26,11 @@ public class Flight {
             }
         }
         return freeSeats;
+    }
+
+    public boolean ableToFly() {
+        // Do stuff to check if land travel is able to roll
+        //return false for demonstrating purposes
+        return false;
     }
 }

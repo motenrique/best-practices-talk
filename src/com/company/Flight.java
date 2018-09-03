@@ -32,6 +32,14 @@ public class Flight {
     public void printItinerary() {
         // Do stuff to print flight data
     }
+
+    public void printItineraryXML() {
+        // Code for xml formatting and print
+    }
+
+    public void printItineraryJSON() {
+        // Code for JSON formatting and print
+    }
 }
 
 

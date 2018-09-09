@@ -1,6 +1,6 @@
 package com.company;
 
-public class FlightSeat {
+public class FlightSeat implements Seat {
     private boolean free;
 
     //TODO Refactor this
@@ -8,3 +8,5 @@ public class FlightSeat {
         return free;
     }
 }
+
+

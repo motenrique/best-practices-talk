@@ -3,13 +3,18 @@ package com.company;
 import java.util.ArrayList;
 import java.util.Date;
 
-public class Flight extends Travel implements TravelElement {
+public class Flight extends Travel implements TravelElement, OverbookTravel {
     ArrayList<FlightSeat> seats = new ArrayList<>();
     String type;
 
     public Flight(Date d, Date a, int minutes, String type) {
         super(d, a, minutes);
         // Do stuff to initialize values
+    }
+
+    @Override
+    public void overBookSeat(Seat seat) {
+        //Do stuff to overbook the seat
     }
 
     public void travel() {

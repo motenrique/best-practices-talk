@@ -3,7 +3,7 @@ package com.company;
 import java.util.ArrayList;
 import java.util.Date;
 
-public class Flight extends Travel {
+public class Flight extends Travel implements TravelElement {
     ArrayList<FlightSeat> seats = new ArrayList<>();
     String type;
 
@@ -12,7 +12,7 @@ public class Flight extends Travel {
         // Do stuff to initialize values
     }
 
-    public void fly() {
+    public void travel() {
         //Do stuff to travel
     }
 
@@ -28,7 +28,7 @@ public class Flight extends Travel {
         return freeSeats;
     }
 
-    public boolean ableToFly() {
+    public boolean isReady() {
         // Do stuff to check if land travel is able to roll
         //return false for demonstrating purposes
         return false;
